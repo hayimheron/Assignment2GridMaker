@@ -1,5 +1,5 @@
-# grid-maker-starter-code
-This repository is the starter code for Assignment 3 - Grid Maker.
+# grid-maker
+Hayim Heron @hayimheron
 
 ### Live Link
 [Website link](https://johnnylaicode.github.io/grid-maker-starter-code/)
