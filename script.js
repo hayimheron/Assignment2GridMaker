@@ -96,7 +96,7 @@ function removeC() {
     }
 }
 
-function colorSingleCell(row, col) {
+function fillClickedCell(row, col) {
     //colorSelected === "SELECT" is for if the user switches from a color back to the select option
     if (colorSelected === "SELECT" || !colorSelected) {
         alert("Select a color first!");
