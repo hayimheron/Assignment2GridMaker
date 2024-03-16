@@ -29,7 +29,7 @@ function addR() {
 
 // Add a column
 function addC() {
-    alert("Clicked Add Col"); 
+    //alert("Clicked Add Col"); 
     //Cells didn't previously exist
     if (numRows == 0) {
         let row = grid.insertRow(-1);
