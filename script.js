@@ -150,6 +150,22 @@ function fillCells(color) {
 
 
 // Clear all cells
+function clearAllColored(){
+    for (let i=0;i<allCells.length;i++) {
+        let cell = allCells[i];
+        cell.style.backgroundColor = "";
+    }
+}
+// Clear table
 function clearAll(){
-    alert("Clicked Clear All"); // Replace this line with your code.
+    if (numRows === 0) {
+        alert("Nothing to clear!");
+    }
+    while (numRows > 0) {
+        grid.deleteRow(-1);
+        //Only numRows decrements
+        numRows--;
+    }
+    numRows = 0;
+    numCols = 0;
 }
