@@ -2,6 +2,9 @@
 let numRows = 0;
 let numCols = 0;
 let colorSelected; 
+const grid = document.getElementById("grid");
+const all_cells = grid.getElementsByTagName("td");
+
 
 // Add a row
 function addR() {
