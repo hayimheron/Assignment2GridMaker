@@ -22,21 +22,19 @@
     </select>
     <!-- Grid Table -->
     <table id="grid">
-        <p>Below is an example of table (grid) template for illustration purpose. 
-            You need to remove this code (tr and td elements) in your assignment
-            so that you will have an empty table as the starting point.</p>
-        <tr>
-            <td onclick="alert('Clicked a table cell');"></td>
-            <td onclick="alert('Clicked a table cell');"></td>
-            <td onclick="alert('Clicked a table cell');"></td>
-        </tr>
-        <tr>
-            <td onclick="alert('Clicked a table cell');"></td>
-            <td onclick="alert('Clicked a table cell');"></td>
-            <td onclick="alert('Clicked a table cell');"></td>
-        </tr>
     </table>
     <!-- Script -->
     <script src="script.js"></script>
+    <script>
+        // Add event listener for function to color cell clicked
+        document.getElementById("grid").addEventListener("click", function(event) {
+            // Only run if a cell is clicked
+            if (event.target.tagName == "TD") {
+                fillClickedCell(event.target.getAttribute("row"), event.target.getAttribute("col"))
+            }
+        });
+    </script>
 </body>
 </html>
+
+
