@@ -146,15 +146,16 @@ function fillAll() {
 
 
 
-// Clear all cells
-function clearAllColored(){
-    for (let i=0;i<allCells.length;i++) {
+// Reset color of all cells
+function clearAllColored() {
+    for (let i=0; i<allCells.length; i++) {
         let cell = allCells[i];
         cell.style.backgroundColor = "";
     }
 }
+
 // Clear table
-function clearAll(){
+function clearAll() {
     if (numRows === 0) {
         alert("Nothing to clear!");
     }
