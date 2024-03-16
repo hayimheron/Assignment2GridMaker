@@ -40,6 +40,13 @@ function fillAll(){
 }
 
 // Clear all cells
+function clearAllColored(){
+    for (let i=0;i<allCells.length;i++) {
+        let cell = allCells[i];
+        cell.style.backgroundColor = "";
+    }
+}
+
 function clearAll(){
     alert("Clicked Clear All"); // Replace this line with your code.
 }
