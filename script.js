@@ -6,9 +6,25 @@ const grid = document.getElementById("grid");
 const allCells = grid.getElementsByTagName("td");
 
 
-// Add a row
+// Add row
 function addR() {
-    alert("Clicked Add Row"); // Replace this line with your code.
+    let row = grid.insertRow(-1);
+    row.setAttribute("row", numRows+1);
+    //Create new cell if none
+    if (numCols == 0) {
+        let cell = row.insertCell(-1);
+        cell.setAttribute("row", numRows+1);
+        cell.setAttribute("col", numCols+1);
+        numCols++;
+    } else { //If some columns exist, complete columns and rows
+        for (let i=0;i<numCols;i++) {
+            let cell = row.insertCell();
+            cell.setAttribute("row", numRows+1);
+            cell.setAttribute("col", i+1);
+        }
+    }
+    //Increase count by 1
+    numRows++;
 }
 
 // Add a column
