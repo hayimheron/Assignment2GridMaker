@@ -131,22 +131,19 @@ function fillU(){
 
 // Fill all cells
 function fillAll() {
-  if (selectedColor === "SELECT") {
+  if (colorSelected === "SELECT" || !colorSelected) {
     // Provide a gentler message to the user
     displayStatusMessage("Please choose a color first.");
     return; // Exit the function early
-  }
-
-  // Optional: Validate that selectedColor is a valid CSS color
-
-  fillCells(selectedColor);
+    } else {
+        for (let i=0;i<allCells.length;i++) {
+            let cell = allCells[i];
+            cell.style.backgroundColor = colorSelected;
+        }
+    }
 }
 
-function fillCells(color) {
-  for (let i = 0; i < gridCells.length; i++) { 
-    gridCells[i].style.backgroundColor = color;
-  }
-}
+
 
 
 // Clear all cells
