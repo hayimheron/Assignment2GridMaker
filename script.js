@@ -119,8 +119,8 @@ function fillU(){
     if (colorSelected === "SELECT" || !colorSelected) {
         alert("Select a color first!");
     } else {
-        for (let i=0; i<all_cells.length; i++) {
-            let cell = all_cells[i];
+        for (let i=0; i<allCells.length; i++) {
+            let cell = allCells[i];
             if (cell.style.backgroundColor === "") {
                 cell.style.backgroundColor = colorSelected;
             }
@@ -136,7 +136,7 @@ function fillAll() {
     displayStatusMessage("Please choose a color first.");
     return; // Exit the function early
     } else {
-        for (let i=0;i<allCells.length;i++) {
+        for (let i=0; i<allCells.length; i++) {
             let cell = allCells[i];
             cell.style.backgroundColor = colorSelected;
         }
