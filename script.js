@@ -23,7 +23,7 @@ function removeC() {
     alert("Clicked Remove Col"); // Replace this line with your code.
 }
 
-function colorSingleCell(row, col) {
+function fillClickedCell(row, col) {
     //colorSelected === "SELECT" is for if the user switches from a color back to the select option
     if (colorSelected === "SELECT" || !colorSelected) {
         alert("Select a color first!");
