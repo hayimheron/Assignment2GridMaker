@@ -35,9 +35,19 @@ function fillU(){
 }
 
 // Fill all cells
-function fillAll(){
-    alert("Clicked Fill All"); // Replace this line with your code.
+function fillAll() {
+  if (colorSelected === "SELECT" || !colorSelected) {
+    // Provide a gentler message to the user
+    displayStatusMessage("Please choose a color first.");
+    return; // Exit the function early
+    } else {
+        for (let i=0;i<allCells.length;i++) {
+            let cell = allCells[i];
+            cell.style.backgroundColor = colorSelected;
+        }
+    }
 }
+
 
 // Clear all cells
 function clearAll(){
