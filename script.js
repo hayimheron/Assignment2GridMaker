@@ -147,7 +147,7 @@ function fillAll() {
 
 
 // Reset color of all cells
-function clearAllColored() {
+function resetColors() {
     for (let i=0; i<allCells.length; i++) {
         let cell = allCells[i];
         cell.style.backgroundColor = "";
