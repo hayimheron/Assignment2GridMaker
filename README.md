@@ -2,7 +2,7 @@
 Hayim Heron @hayimheron
 
 ### Live Link
-[Website link](https://johnnylaicode.github.io/grid-maker-starter-code/)
+[Website link](https://hayimheron.github.io/Assignment2GridMaker/)
 
 ----------
 ### 1. Use the following process to ***import*** the Assignment 2 starter code repository to your GitHub account as the starter codebase
