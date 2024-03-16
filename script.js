@@ -56,7 +56,6 @@ function clearAll(){
         //Only numRows decrements
         numRows--;
     }
-
     numRows = 0;
     numCols = 0;
 }
